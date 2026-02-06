@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: localization, language, locale, translation, fallback
 Requires PHP: 5.6
 Requires at least: 4.0
-Tested up to: 6.7
-Stable tag: 2.0.1
+Tested up to: 6.9
+Stable tag: 2.1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -15,9 +15,9 @@ Set a language as a fallback for the chosen language (e.g. "Deutsch" as a fallba
 
 Starting with WordPress 4.3, you can use languages such as "Deutsch (Sie)" (formal German) in your WordPress installation. But if the themes or plugins you are using do not have a
 translation file for this language, WordPress would use the default language, usually English, instead. With the help of this plugin, you can set a fallback for your chosen language.
-Every time a translation file is loaded, the plugin will then load the fallback, if a translation for the originally chosen language was not found.
+Every time a translation file is loaded, the plugin will then load the fallback if a translation for the originally chosen language was not found.
 
-A list of all of my plugins can be found on the [WordPress Plugin page](http://kau-boys.com/wordpress-plugins "WordPress Plugins") on my blog [kau-boys.com](http://kau-boys.com).
+A list of all my plugins can be found on the [WordPress Plugin page](http://kau-boys.com/wordpress-plugins "WordPress Plugins") on my blog [kau-boys.com](http://kau-boys.com).
 
 == Screenshots ==
 
@@ -25,7 +25,7 @@ A list of all of my plugins can be found on the [WordPress Plugin page](http://k
 
 == Installation ==
 
-Install the plugin as usual from the plugins page on your dashboard (by search or uploaded ZIP file) or upload it with FTP. You should than choose your fallback language in "Settings > General".
+Install the plugin as usual from the plugins page on your dashboard (by search or uploaded ZIP file) or upload it with FTP. You should then choose your fallback language in "Settings > General".
 
 
 
@@ -39,8 +39,22 @@ No. You can choose any fallback language that fits your original language. Think
 
 No. The plugin will automatically download the fallback language if it is not already installed.
 
+= How can I report security bugs? =
+
+You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team helps validate, triage and handle any security vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/e47d5c4f-b575-41b7-8d6c-a5b49374c09e)
+
 
 == Change Log ==
+
+= 2.1.1 =
+* Fix wrong version number in PHP file and readme
+* Time invested for this release: 10min
+
+= 2.1.0 =
+* Add `sanitize_callback` for setting
+* Increment Tested up to
+* Add link to Patchstack in readme
+* Time invested for this release: 30min
 
 = 2.0.1 =
 * Fix some minor Plugin Check issues
